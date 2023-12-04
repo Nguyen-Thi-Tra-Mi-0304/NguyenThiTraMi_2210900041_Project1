@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Nguyen-Thi-Tra-Mi-2210900041_main.css">
+</head>
+<body>
+    <!-- Begin: Header -->
+<header>
+    <img src="./image/header/NCCDinhTiT1131_Header_1263x60.jpg" alt="">
+</header>
+<!--- End: Header-->
+
+<!--- Begin: Nav-->
+<nav>
+    <div class="nav_logo">
+        <a href=""><img style="width: 180px;" src="./image/header/fahasa-logo.png" alt="logo"></a>
+    </div>
+    <div class="nav_menu">
+            <ul class="menu">
+                <li><a href="poject.html">Trang chủ</a></li>
+                <li><a href="gioithieu_fahasa.html">Giới thiệu</a></li>
+                <li>
+                    <a href="">
+                        Hỗ trợ
+                        <i class="nav-arrow-down fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="Chính sách bảo hành - bồi hoàn.html">Chính sách bảo hành và bồi hoàn</a></li>
+                        <li><a href="Chính sách vận chuyển.html">Chính sách vận chuyển</a></li>
+                        <li><a href="Chính sách khách sỉ.html">Chính sách khách sỉ</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tin tức</a></li>
+            </ul>
+    </div>
+    <div class="nav_search">
+        <input type="search" placeholder="Tìm kiếm sản phẩm...">
+        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+    <div class="nav_icon">
+        <p><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</a></p>
+        <p id="connect_form_open"><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Tài khoản</a>
+            <div class="connect_form">
+                <div class="connect_form_content">
+                    <h2>Đăng nhập <span id="connect_form_close"><i class="fa fa-times" aria-hidden="true"></i></span></h2>
+                    <form action="">
+                        <div>
+                            <label for="taikhoan">Tài khoản: </label>
+                            <input type="email" id="taikhoan" name="taikhoan" placeholder="abc123@gmail.com">
+                        </div>
+                        <div>
+                            <label for="matkhau">Mật khẩu: </label>
+                            <input type="text" id="matkhau" name="matkhau">
+                        </div>
+                        <button>Đăng nhập</button>
+                    </form>
+                    <div class="connect_form_content_dk">
+                        <p class="connect_content_dk"><a href="dangky.html">Đăng ký</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </p>
+</nav>
+<section id="menu_bar">
+    <div class="container">
+        <div class="menu_bar_content">
+            <ul>
+                <li><a href="">Sản phẩm mới</a></li>
+                <li><a href=""><i class="fa fa-book" aria-hidden="true"></i>Sách trong nước</a></li>
+                <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i>Sách nước ngoài</a></li>
+                <li><a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i>Dụng cụ học tập</a></li>
+                <li><a href=""><i class="fa fa-child" aria-hidden="true"></i>Đồ chơi</a></li>
+                <li><a href=""><i class="fa fa-gift" aria-hidden="true"></i>Quà lưu liệm</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--- End: Nav-->
+
+<!-- Begin: content-->
+<section id="payment">
+    <div class="container">
+        <div class="payment_top_warp">
+            <div class="payment_top">
+                <div class="payment_top_cart payment_top_item">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <div class="payment_top_address payment_top_item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="payment_top_payment payment_top_item">
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="payment_content row">
+            <div class="payment_content_left">
+                <div class="payment_content_left_method_delivery">
+                    <p style="font-weight: bold;">Phương thức giao hàng </p>
+                    <div class="payment_content_left_method_delivery_item">
+                        <input checked type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh</label>
+                    </div>
+                </div>
+                <div class="payment_content_left_method_payment">
+                    <p style="font-weight: bold;">Phương thức thanh toán </p>
+                    <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại</p>
+                    <div class="payment_content_left_method_payment_item">
+                        <input name="method_payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ tín dụng (OnePay)</label>
+                    </div>
+                    <div class="payment_content_left_method_payment_img">
+                        <img src="./image/bank/visa (1).png" alt="">
+                    </div>
+                    <div class="payment_content_left_method_payment_item">
+                        <input checked name="method_payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ ATM</label>
+                    </div>
+                    <div class="payment_content_left_method_payment_img">
+                        <div class="payment_content_left_method_payment_img_bank row">
+                            <img src="./image/bank/acb.png" alt="">
+                            <img src="./image/bank/bidv.jpg" alt="">
+                            <img src="./image/bank/mb.png" alt="">
+                            <img src="./image/bank/techcombank.png" alt="">
+                            <img src="./image/bank/tp.png" alt="">
+                            <img src="./image/bank/vib.jpg" alt="">
+                            <img src="./image/bank/vietcombank.png" alt="">
+                            <img src="./image/bank/viettinbank.png" alt="">
+                        </div>
+                    </div>
+                    <div class="payment_content_left_method_payment_item">
+                        <input name="method_payment" type="radio">
+                        <label for="">Thanh toán bằng MoMo</label>
+                    </div>
+                    <div class="payment_content_left_method_payment_img">
+                        <img src="./image/bank/momo.png" alt="">
+                    </div>
+                    <div class="payment_content_left_method_payment_item">
+                        <input name="method_payment" type="radio">
+                        <label for="">Thanh toán khi nhận hàng</label>
+                    </div>
+                </div>
+            </div>
+            <div class="payment_content_right">
+                <div class="payment_content_right_button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fa fa-check" aria-hidden="true"></i></button>
+                </div>
+                <div class="payment_content_right_button">
+                    <input type="text" placeholder="Mã cộng tác viên">
+                    <button><i class="fa fa-check" aria-hidden="true"></i></button>
+                </div>
+                <div class="payment_content_right_mnv">
+                    <select name="" id="">
+                        <option value="">Chọn mã nhân viên</option>
+                        <option value="">NV01</option>
+                        <option value="">NV02</option>
+                        <option value="">NV03</option>
+                        <option value="">NV04</option>
+                    </select>
+                </div>
+                <div class="payment_content_right_money">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>Cây Cam Ngọt Của Tôi</td>
+                            <td>-20%</td>
+                            <td>1</td>
+                            <td><p>86.400 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>Combo Sách Ngàn Mặt Trời Rực Rỡ + Cây Cam Ngọt Của Tôi (Bộ 2 Cuốn)</td>
+                            <td>-21%</td>
+                            <td>1</td>
+                            <td><p>186.592 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;"><p>186.592 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tạm tính</td>
+                            <td style="font-weight: bold;"><p>186.592 <sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                    <p style="color: red; font-size: 12px; padding-top: 12px;">Giá sản phẩm đã tính cả thuế VAT</p>
+                </div>
+            </div>
+        </div>
+        <div class="payment_content_bottom">
+            <button>Tiếp tục thanh toán</button>
+        </div>
+    </div>
+</section>
+<!-- End: content-->
+
+
+<footer>
+    <div class="footer_content">
+        <div class="footer_content_left">
+            <div class="footer_content_left_logo_first">
+                <img src="./image/header/fahasa-logo.png" alt="logo-footer">
+            </div>
+            <div class="footer_content_left_text">
+                <p>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</p>
+                <p>Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA</p>
+                <p>62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</p>
+                <p>Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.</p>
+            </div>
+            <div class="footer_content_left_logo_second">
+                <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=19176"><img src="./image/footer/logo-bo-cong-thuong-da-thong-bao1.png" alt="logo bộ công thương"></a>
+            </div>
+            <div class="footer_content_left_social_list">
+                <a href="https://www.facebook.com/fahasa/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/fahasa_official/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://fahasa-blog.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Fahasa_com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.com/fahasaVN/"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a> 
+            </div>
+            <div class="footer_content_left_app">
+                <a href="https://play.google.com/store/apps/details?id=com.fahasa.android.fahasa"><img src="./image/footer/android1.png" alt="android"></a>
+                <a href="https://itunes.apple.com/app/id1227597830?mt=8"><img src="./image/footer/appstore1.png" alt="appstore"></a>
+            </div>
+        </div>
+        <div class="footer_content_right">
+            <h2>Liên hệ</h2>
+            <div class="footer_content_right_connect">
+                <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    60-62 Lê Lợi, Q.1, TP. HCM
+                </p>
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    1900636467
+                </p>
+                <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    cskh@fahasa.com.vn
+                </p>
+            </div>
+            <div class="footer_content_right_list">
+                <div class="footer_content_right_list_first">
+                    <h2>Hỗ trợ</h2>
+                    <ul>
+                        <li><a href="Chính sách bảo hành - bồi hoàn.html">Chính sách bảo hành - bồi hoàn</a></li>
+                        <li><a href="Chính sách vận chuyển.html">Chính sách vận chuyển</a></li>
+                        <li><a href="Chính sách khách sỉ.html">Chính sách khách sỉ</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_right_list_secod">
+                    <h2>Giới thiệu</h2>
+                    <ul>
+                        <li><a href="gioithieu_fahasa.html">Giới thiệu Fahasa</a></li>
+                        <li><a href="poject.html">Trang chủ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_last">
+        <p >Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.</p>
+    </div>
+</footer>
+<!-- End: Footer-->
+<script>
+    //Tạo đóng mở Tài khoản (Đăng nhập)---------------------------------------------------------------------------------
+        const connectopen = document.querySelector('#connect_form_open')
+        const connectclose = document.querySelector('#connect_form_close')
+        
+        // console.log(connectbtn)
+        connectopen.addEventListener("click", function(){
+        document.querySelector('.connect_form').style.display = "flex"
+        })
+        connectclose.addEventListener("click", function(){
+        document.querySelector('.connect_form').style.display = "none"
+        })
+    
+    
+    //product----------------------------------------------------
+        const reviews = document.querySelector(".reviews")
+        const tacgia = document.querySelector(".tacgia")
+        if(reviews){
+            reviews.addEventListener("click", function(){
+                document.querySelector(".product_content_right_bottom_content_reviews").style.display = "block"
+                document.querySelector(".product_content_right_bottom_content_tacgia").style.display = "none"
+            })
+        }
+        if(tacgia){
+            tacgia.addEventListener("click", function(){
+                document.querySelector(".product_content_right_bottom_content_reviews").style.display = "none"
+                document.querySelector(".product_content_right_bottom_content_tacgia").style.display = "block"
+            })
+        }
+        const button = document.querySelector(".product_content_right_bottom_top")
+        if(button){
+            button.addEventListener("click", function(){
+                document.querySelector(".product_content_right_bottom_content_big").classList.toggle("active")
+            })
+        }
+    
+    // Bigitem
+        const bigImg = document.querySelector(".product_content_left_big_img img")
+        const smallImg = document.querySelectorAll(".product_content_left_small_img img")
+        smallImg.forEach(function(imgItem,X){
+            imgItem.addEventListener("click", function(){
+                bigImg.src = imgItem.src
+            })
+        })
+    </script>
+    </body>
+    </html>
