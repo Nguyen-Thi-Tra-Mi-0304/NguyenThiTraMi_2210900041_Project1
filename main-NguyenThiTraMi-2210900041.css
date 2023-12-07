@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#admin-content{
+    display: flex;
+    justify-content: space-between;
+}
+/* ----------------------------Content-left------------------------ */
+.content-left{
+    width: 30%;
+    padding: 0 12px;
+    background-color: rgb(85,214,194);
+    height: auto;
+}
+.content-left-logo{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.content-left-logo img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content-left-logo h2{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 6px;
+    font-size: 18px;
+}
+.content-left-menu {
+    padding: 0 12px;
+}
+.content-left-menu-list > li {
+    list-style-type: none;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    /* text-align: center; */
+    cursor: pointer;
+    color: #fff;
+}
+.content-left-menu-list > li:hover{
+    background-color: #C62128;
+    transition: all 0.5s ease;
+}
+.content-left-menu-list > li a{
+    text-decoration: none;
+    color: #000;
+}
+.content-left-menu-list > li a:hover{
+    color: #fff;
+}
+.content-left-menu-list > li i {
+    padding-right: 6px;
+}
+.content-left-menu-list-submenu li{
+    padding: 6px 20px ;
+    list-style-type: none;
+}
+.content-left-menu-list-submenu li a{
+    text-decoration: none;
+    opacity: 1;
+}
+.content-left-menu-list-submenu li a:hover{
+    opacity: 0.75;
+}
+.content-left-menu-list .active {
+    background-color: #C62128;
+    color: #fff;
+}
+.content-left-menu-list .active a{
+    color: #fff;
+}
+/* ----------------------------Content-right------------------------ */ */
+.content-right {
+    width: 70%;
+    padding: 12px 12px;
+}
+.content-right-title {
+    border-bottom: 1px solid #ddd;
+}
+.content-right-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+/* -------------------------------Danh mục---------------------- */
+/* -------------Thêm danh mục:  */
+.content-right .content-right-cartegory-add {
+    margin-top: 20px;
+}
+.content-right .content-right-cartegory-add  h1{
+    margin-bottom: 12px;
+}
+.content-right .content-right-cartegory-add input{
+    height: 35px;
+    width: 300px;
+}
+.content-right .content-right-cartegory-add button{
+    display: block;
+    margin-top: 12px;
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #C62128;
+    color: #fff;
+    border: 1px solid #C62128;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.content-right .content-right-cartegory-add button:hover{
+    background-color: transparent;
+    border: 1px solid #C62128;
+    color: red;
+}
+/* --------------Danh sách danh mục */
+.content-right-cartegory-list {
+    margin-top: 20px;
+}
+.content-right-cartegory-list h1 {
+    margin-bottom: 12px;
+}
+.content-right-cartegory-list table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.content-right-cartegory-list table tr th,td {
+    border: 1px solid #ddd;
+}
+table{
+    border-collapse: collapse;
+}
+.content-right-cartegory-list table td a {
+    color: #000;
+}
+.content-right-cartegory-list table td a:hover {
+    color: red;
+}
+
+.content-right .content-right-product-add {
+    margin-top: 20px;
+}
+.content-right .content-right-product-add h1 {
+    margin-bottom: 12px;
+}
+.content-right-product-add input {
+    height: 30px;
+    width: 500px;
+    display: block;
+    margin: 12px 21px;
+    padding-left: 12px;
+}
+.content-right-product-add select {
+    height: 30px;
+    width: 240px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.content-right-product-add textarea {
+    margin: 20px 21px 12px 21px;
+    display: block;
+    padding: 12px;
+}
+.content-right-product-add button {
+    display: block;
+    margin-top: 12px;
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #C62128;
+    color: #fff;
+    border: 1px solid #C62128;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
